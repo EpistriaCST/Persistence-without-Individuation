@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "persistence-without-individuation"
+version = "0.1.0"
+description = "Reference implementation for the witness construction, battery computation, and invariance verification of 'Persistence Without Individuation' (Thomas, 2026)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Charles S. Thomas", email = "charles@epistria.com" }
+]
+maintainers = [
+  { name = "Charles S. Thomas", email = "charles@epistria.com" }
+]
+keywords = [
+  "consciousness",
+  "individuation",
+  "non-identifiability",
+  "partition",
+  "persistence",
+  "observable invariance",
+  "transformation group",
+  "coupled oscillators",
+  "Langevin dynamics"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+  "numpy >= 1.24",
+  "scipy >= 1.11",
+  "matplotlib >= 3.7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest >= 7.4",
+  "pytest-cov >= 4.1",
+]
+notebooks = [
+  "jupyter >= 1.0",
+  "notebook >= 7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/EpistriaCST/persistence-without-individuation"
+Repository = "https://github.com/EpistriaCST/persistence-without-individuation"
+Issues = "https://github.com/EpistriaCST/persistence-without-individuation/issues"
+
+[tool.setuptools]
+packages = ["witness", "battery", "invariance"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+addopts = "-v --tb=short -m 'not slow'"
+markers = [
+    "slow: marks tests as slow (deselected by default; run with '-m slow' to include)"
+]
