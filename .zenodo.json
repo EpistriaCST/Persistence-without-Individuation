@@ -1,0 +1,38 @@
+{
+  "title": "Persistence Without Individuation: Reference Implementation",
+  "description": "Reference computational implementation accompanying the paper 'Persistence Without Individuation: A Witness Model for Metric-Preserving Identity Underdetermination' (Thomas, 2026). Implements the two-oscillator Langevin witness substrate, the eight-item observable battery, and the eight invariance verification scripts of Appendix C. Numerical agreement with analytical results is verified at machine precision for exact-invariance observables and at characterized analytical bounds for near-invariance observables (PLV, Kuramoto). The implementation is positioned as independent verification of the paper's analytical results and as a substrate for downstream extensions, including candidate partition-warrants.",
+  "creators": [
+    {
+      "name": "Thomas, Charles S.",
+      "affiliation": "Epsitria, LLC"
+    }
+  ],
+  "keywords": [
+    "consciousness",
+    "individuation",
+    "non-identifiability",
+    "partition",
+    "persistence",
+    "observable invariance",
+    "transformation group",
+    "coupled oscillators",
+    "Langevin dynamics",
+    "stochastic differential equations",
+    "philosophy of mind",
+    "philosophy of science"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "upload_type": "software",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/EpistriaCST/persistence-without-individuation",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "communities": [],
+  "notes": "When the accompanying paper is published, the paper DOI should be added as an additional related identifier with relation 'isSupplementTo' and resource_type 'publication-article'. The .zenodo.json file may be updated and a new GitHub release tagged to refresh the Zenodo deposit metadata."
+}

@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite both the software (this entry)
+  and the accompanying paper (preferred-citation, below).
+title: "Persistence Without Individuation: Reference Implementation"
+type: software
+authors:
+  - family-names: Thomas
+    given-names: Charles S.
+    affiliation: "Epsitria, LLC"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add when available
+version: 0.1.0
+date-released: 2026-04-25
+url: "https://github.com/EpistriaCST/persistence-without-individuation"
+repository-code: "https://github.com/EpistriaCST/persistence-without-individuation"
+license: MIT
+keywords:
+  - consciousness
+  - individuation
+  - non-identifiability
+  - partition
+  - persistence
+  - observable invariance
+  - transformation group
+  - coupled oscillators
+  - Langevin dynamics
+abstract: >-
+  Reference computational implementation accompanying the paper
+  "Persistence Without Individuation: A Witness Model for
+  Metric-Preserving Identity Underdetermination" (Thomas, 2026).
+  Implements the two-oscillator Langevin witness substrate, the
+  eight-item observable battery (persistence autocorrelation, return
+  statistics, spectral stability, transport profile, phase-locking
+  value, Kuramoto order parameter, correlation-matrix coherence, and
+  broadcast/Gramian observables), and the eight invariance
+  verification scripts of Appendix C. The implementation is
+  positioned as independent numerical verification of the paper's
+  analytical results and as a substrate for downstream extensions,
+  including candidate partition-warrants.
+preferred-citation:
+  type: article
+  title: >-
+    Persistence Without Individuation: A Witness Model for
+    Metric-Preserving Identity Underdetermination
+  authors:
+    - family-names: Thomas
+      given-names: Charles S.
+      affiliation: "Epsitria, LLC"
+  year: 2026
+  notes: "Manuscript in submission"
